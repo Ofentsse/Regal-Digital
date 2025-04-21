@@ -409,6 +409,18 @@ header .container {
     text-align: center;
 }
 
+.contact-details i.fa-envelope {
+    font-size: 1.3em;
+}
+
+.contact-details i.fa-whatsapp {
+    font-size: 1.3em;
+}
+
+.contact-details i.fa-map-marker-alt {
+    font-size: 1.3em;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
