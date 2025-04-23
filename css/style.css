@@ -354,7 +354,7 @@ header .container {
 }
 
 .client-logos img {
-    max-height: 80px;
+    max-height: 100px;
     width: auto;
     filter: grayscale(100%);
     opacity: 0.7;
