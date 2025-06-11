@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for contacting Regal Digital">
+    <title>Thank You | Regal Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico.jpg" type="image/x-icon">
+    <style>
+        /* Additional styles specific to thank-you page */
+        .thank-you-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .thank-you-icon {
+            font-size: 80px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .thank-you-details {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .action-buttons {
+            margin-top: 30px;
+        }
+        
+        .btn-home {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4a6fa5;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-home:hover {
+            background-color: #3a5a8a;
+        }
+        
+        .confirmation-number {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 20px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header/Navigation (same as main site) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/Prince Logo-01.png" alt="Regal Digital Logo"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="index.html#reporting">Reporting</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thank You Content -->
+    <main class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-container">
+                <div class="thank-you-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Thank You for Contacting Us!</h1>
+                <p class="thank-you-message">Your message has been successfully submitted.</p>
+                
+                <div class="thank-you-details">
+                    <p>We appreciate you reaching out to Regal Digital. Our team will review your message and get back to you within 24-48 hours.</p>
+                    <p>In the meantime, feel free to explore more about our services or connect with us on social media.</p>
+                    
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="index.html" class="btn-home">Return to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as main site) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="index.html#reporting">Reporting</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/regaldigitalmarketing3/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/regal-digital/posts/?feedView=all"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/regal_digital/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Regal Digital. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+        }
+    });
+</script>
+</body>
+
+</html>
