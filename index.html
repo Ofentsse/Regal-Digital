@@ -171,7 +171,11 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form action="https://api.web3forms.com/submit" method="POST" >
+                        <input type="hidden" name="access_key" value="0947e0f6-a7fe-4bab-9447-a178bf6c41d2">
+                        <input type="hidden" name="subject" value="New Submission from Regal Digital Website">
+                        <input type="hidden" name="redirect" value="https://regaldigital.netlify.app/thank-you.html">
+                        <input type="hidden" name="from_name" value="Regal Digital Website">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                             <span class="error-message" id="name-error"></span>
@@ -181,7 +185,7 @@
                             <span class="error-message" id="email-error"></span>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10,15}">
                             <span class="error-message" id="phone-error"></span>
                         </div>
                         <div class="form-group">
@@ -189,7 +193,7 @@
                             <span class="error-message" id="message-error"></span>
                         </div>
                         <button type="submit" class="btn btn-secondary" id="submit-btn">Send Message</button>
-                        <div id="form-status"></div>
+                        <div id="result" class="form-status"></div>
                     </form>
                 </div>
             </div>
