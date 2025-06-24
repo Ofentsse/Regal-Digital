@@ -251,6 +251,21 @@ header .container {
     transform: scale(1.03);
 }
 
+.about-image video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    object-fit: cover;
+}
+
+.about-image video:hover {
+    transform: scale(1.03);
+}
+
+
 /* Solutions Section */
 .solutions-section {
     padding: 100px 0;
